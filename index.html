@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script defer src="js/index.js"></script>
+    </head>
+    <body class="layout" onload="displayLeaderboard()">
+        <header class="header">         
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="images/logo.png" alt="logo" title="logo" width="50" height="50">
+            </div>
+                            
+            <!-- Top navigation bar -->
+            <nav class="topnav">
+                <a href="./index.html"><button class="button2">Home</button></a>
+                <div class="dropdown">
+                    <button class="button2">Quizzes</button>
+                    <div class="dropdown-options">
+                        <a href="./quiz_start.html" onclick="categoryLink('Technology')">Technology</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Geography')">Geography</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Physics')">Physics</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Entertainment')">Entertainment</a>
+                    </div>
+                </div>
+                <a href="#leaderboard"><button class="button2">Leaderboard</button></a>
+                <a href="#rules"><button class="button2">Rules</button></a>
+                <a href="./results.html"><button class="button2">My Results</button></a>
+            </nav>
+            <h1 class="title">QueQuienQuiz</h1>
+            <p class="title2">A Fun Quiz Game</p>
+        </header>
+      
+        <aside class="left-sidebar">
+            <!-- Left side vertical quizzes menu -->
+            <nav class="vertical-menu">
+                <h2>Quizzes</h2>
+                <ul class="quizz-list">
+                    <li><a href="./quiz_start.html" onclick="categoryLink('Technology')">Technology</a></li>
+                    <li><a href="./quiz_start.html" onclick="categoryLink('Geography')">Geography</a></li>
+                    <li><a href="./quiz_start.html" onclick="categoryLink('Physics')">Physics</a></li>
+                    <li><a href="./quiz_start.html" onclick="categoryLink('Entertainment')">Entertainment</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <aside class="right-sidebar">
+            <!-- Right side vertical top 10 leaderboard 
+            https://stackoverflow.com/questions/52507871/creating-a-leaderboard-in-html-js -->
+            <h2>Leaderboard</h2>
+            <h2>Top 10</h2>
+            <section>
+                <div class="row">
+                    <div class="column">
+                      <h3>Nickname</h3>
+                    </div>
+                    <div class="column">
+                      <h3>Total Points</h3>
+                    </div>                    
+                </div>
+                <div id="showLeaderboard"></div>            
+        </aside>
+
+        <main class="main-content">
+            <article>
+                <!-- Text introducing the game -->
+                <h2>Welcome!</h2>
+                <section class="main-text">
+                    <p>QueQuienQuiz is a fun quiz game with 4 different quizzes and 10 questions per quiz.</p>
+                    <p>You have 15 seconds to answer each question.</p>
+                    <p>Choose a quiz, enter your nickname, and see how many points you can get.</p>
+                </section>
+            </article>
+
+            <section class="quiz-buttons">
+                <!-- Quizz buttons -->
+                <button class="block-button" id="tec-main">Technology</button>
+                <button class="block-button" id="geo-main">Geography</button>
+                <button class="block-button" id="phy-main">Physics</button>
+                <button class="block-button" id="ent-main">Entertainment</button>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="images/logo.png" alt="logo" title="logo" width="50" height="50">
+            </div>
+            <!-- Bottom navigation bar -->
+            <nav class="topnav">
+                <a href="./index.html"><button class="button2">Home</button></a>
+                <div class="dropup">
+                    <button class="button2">Quizzes</button>
+                    <div class="dropup-content">
+                        <a href="./quiz_start.html" onclick="categoryLink('Technology')">Technology</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Geography')">Geography</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Physics')">Physics</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Entertainment')">Entertainment</a>
+                    </div>
+                </div>
+                <a href="#leaderboard"><button class="button2">Leaderboard</button></a>
+                <a href="#rules"><button class="button2">Rules</button></a>
+                <a href="./results.html"><button class="button2">My Results</button></a>
+                <a href="./contact.html"><button class="button2">Contact</button></a>
+            </nav>
+            <div class="copyright">&copy; 2024 QueQuienQuiz</div> 
+        </footer>
+
+    </body >
+</html>

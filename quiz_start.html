@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Start page</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script defer src="js/quiz_start.js"></script>
+    </head>
+    <body class="layout" onload="displayLeaderboard()">
+        <header class="header">         
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="images/logo.png" alt="logo" title="logo" width="50" height="50">
+            </div>
+                            
+            <!-- Top navigation bar -->
+            <nav class="topnav">
+                <a href="./index.html"><button class="button2">Home</button></a>
+                <div class="dropdown">
+                    <button class="button2">Quizzes</button>
+                    <div class="dropdown-options">
+                        <a href="./quiz_start.html" onclick="categoryLink('Technology')">Technology</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Geography')">Geography</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Physics')">Physics</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Entertainment')">Entertainment</a>
+                    </div>
+                </div>
+                <a href="#leaderboard"><button class="button2">Leaderboard</button></a>
+                <a href="#rules"><button class="button2">Rules</button></a>
+                <a href="./results.html"><button class="button2">My Results</button></a>
+            </nav>
+            <h1 class="title">QueQuienQuiz</h1>
+            <p class="title2">A Fun Quiz Game</p>
+        </header>
+      
+        <aside class="left-sidebar">
+            <!-- Left side vertical quizzes menu -->
+            <nav class="vertical-menu">
+                <h2>Quizzes</h2>
+                <ul class="quizz-list">
+                    <li><a href="./quiz_start.html" onclick="categoryLink('Technology')">Technology</a></li>
+                    <li><a href="./quiz_start.html" onclick="categoryLink('Geography')">Geography</a></li>
+                    <li><a href="./quiz_start.html" onclick="categoryLink('Physics')">Physics</a></li>
+                    <li><a href="./quiz_start.html" onclick="categoryLink('Entertainment')">Entertainment</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <aside class="right-sidebar">
+            <!-- Right side vertical top 10 leaderboard 
+            https://stackoverflow.com/questions/52507871/creating-a-leaderboard-in-html-js -->
+            <h2>Leaderboard</h2>
+            <h2>Top 10</h2>
+            <section>
+                <div class="row">
+                    <div class="column">
+                      <h3>Nickname</h3>
+                      <p id="showNickname"></p>
+                    </div>
+                    <div class="column">
+                      <h3>Total Points</h3>
+                      <p id="showTotalPoints"></p>
+                    </div>                    
+                </div>
+                <div id="showLeaderboard"></div>
+         </aside>
+
+        <main class="main-content">
+            <article>
+                <!-- Text introducing the game -->
+                <h2 id="category-name"></h2>
+                <section class="main-text">
+                    <h3>Rules:</h3>
+                    <ol>
+                        <li>This quiz contains 10 questions with 4 possible answers. Only 1 answer is correct.</li>
+                        <li>You have 15 seconds to answer each question. </li>
+                        <li>You have 2 helps. You can only use both once. If you use the help and get the correct answer, you’ll receive half of the points.<br>
+                            <b>Example:</b>You answered a question correctly in the last second. In normal circumstances you would have received 9 points. However, because you have used the help, you’ll get 4.5 points.</li>
+                        <li>You’ll get your score at the end of the quiz. If you do another quiz, the new score will be added to the previous one, and so on until you complete the 4 quizzes which will make your total score.</li>
+                    </ol>
+                </section>
+            </article>
+            <section class="input-nickname">
+                <p class="text-enter">Enter your nickname:</p>
+                <input id="nickname" type="text" size="16" maxlength="16" placeholder="max. 16 chars" required>
+            </section>
+
+            <div class="start-next-buttons">
+                <!-- Quizz buttons -->
+                <button class="next-button" id="start-btn">Start</button>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="images/logo.png" alt="logo" title="logo" width="50" height="50">
+            </div>
+            <!-- Bottom navigation bar -->
+            <nav class="topnav">
+                <a href="./index.html"><button class="button2">Home</button></a>
+                <div class="dropup">
+                    <button class="button2">Quizzes</button>
+                    <div class="dropup-content">
+                        <a href="./quiz_start.html" onclick="categoryLink('Technology')">Technology</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Geography')">Geography</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Physics')">Physics</a>
+                        <a href="./quiz_start.html" onclick="categoryLink('Entertainment')">Entertainment</a>
+                    </div>
+                </div>
+                <a href="#leaderboard"><button class="button2">Leaderboard</button></a>
+                <a href="#rules"><button class="button2">Rules</button></a>
+                <a href="./results.html"><button class="button2">My Results</button></a>
+                <a href="./contact.html"><button class="button2">Contact</button></a>
+            </nav>
+            <div class="copyright">&copy; 2024 QueQuienQuiz</div> 
+        </footer>
+
+    </body >
+</html>
