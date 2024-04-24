@@ -570,7 +570,7 @@ function stopCount(user_answer) {
   // release interval from the variable
   interval = null;
   createResultsList(user_answer);
-  if(question_count == 2){
+  if(question_count == 9){
     window.location = "./results.html";
   } else {
     document.getElementById("countdown").innerText = setTime;
