@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Quiz Start page</title>
+        <title>Contact page</title>
         <link rel="stylesheet" href="css/index.css">
-        <script defer src="js/quiz_start.js"></script>
+        <script defer src="js/contact.js"></script>
     </head>
     <body class="layout" onload="displayLeaderboard()">
         <header class="header">         
@@ -61,18 +61,16 @@
                       <p id="showTotalPoints"></p>
                     </div>                    
                 </div>
-                <div id="showLeaderboard"></div>
-         </aside>
+                <div id="showLeaderboard"></div>            
+        </aside>
 
         <main class="main-content">
             <article>
-                <!-- Text introducing the game -->
-                <h2 id="category-name"></h2>
+                <h1>Rules</h1>
                 <section class="main-text">
-                    <h3>Rules:</h3>
                     <ol>
                         <li>There are 4 quizzes with 10 questions each.</li>
-                        <li>Each question has 4 possible answers. Only one answer is correct.</li>
+                        <li>Each question has 4 possible answers. Only 1 answer is correct.</li>
                         <li>You have 15 seconds to answer each question. </li>
                         <li>After selecting the answer, click on the "Next" button to display the next question.</li>
                         <li>If you run out of time, it will jump to the next question.</li>
@@ -83,14 +81,8 @@
                     </ol>
                 </section>
             </article>
-            <section class="input-nickname">
-                <p class="text-enter">Enter your nickname:</p>
-                <input id="nickname" type="text" size="16" maxlength="16" placeholder="max. 16 chars" required>
-            </section>
-
             <div class="start-next-buttons">
-                <!-- Quizz buttons -->
-                <button class="next-button" id="start-btn">Start</button>
+                <a href="./index.html"><button class="next-button">Home</button>
             </div>
         </main>
         

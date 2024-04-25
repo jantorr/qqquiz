@@ -11,7 +11,7 @@ let questions = [
 //Technology questions 1 to 10
   {
     id: 1,
-    question: "What is the Full Form Of RAM?",
+    question: "What does RAM stand for?",
     answer:"Random Access Memory",
     options: [
         "Run Accept Memory",
@@ -22,7 +22,7 @@ let questions = [
   },
   {
     id: 2,
-    question: "What is the Full-Form of CPU?",
+    question: "What does CPU stand for?",
     answer: "Central Processing Unit",
     options: [
       "Central Program Unit",
@@ -33,35 +33,35 @@ let questions = [
   },
   {
     id: 3,
-    question: "What is the Full-Form of E-mail",
-    answer: "Electronic Mail",
+    question: "The first search engine on the internet was:",
+    answer: "Archie",
     options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
+      "Google",
+      "Archie",
+      "Yahoo",
+      "Bing"
     ]
   },
   {
     id: 4,
-    question: "'DB' in computer means?",
-    answer: "DataBase",
+    question: "The number of bits used by IPv6 address is:",
+    answer: "128",
     options: [
-      "Double Byte",
-      "Data Block",
-      "DataBase",
-      "None of these"
+      "256",
+      "32",
+      "64",
+      "128"
     ]
   },
   {
     id: 5,
-    question: "What is FMD?",
-    answer: "Fluorescent Multi-Layer Disc",
+    question: "Which technology is used to record cryptocurrency transactions?",
+    answer: "Blockchain",
     options: [
-      "Fluorescent Multi-Layer Disc",
-      "Flash Media Driver",
-      "Fast-Ethernet Measuring Device",
-      "None of these"
+      "Mining",
+      "Digital Wallet",
+      "Blockchain",
+      "Token"
     ]
   },
   {
@@ -77,13 +77,13 @@ let questions = [
   },
   {
     id: 7,
-    question: "A JPG stands for:",
-    answer: "A format for an image file",
+    question: "The first computer virus was known as:",
+    answer: "Creeper program",
     options: [
-      "A format for an image file",
-      "A Jumper Programmed Graphic",
-      "A type of hard disk",
-      "A unit of measure for memory"
+      "Creeper program",
+      "Rabbit",
+      "SCA virus",
+      "Elk cloner"
     ]
   },
   {
@@ -99,7 +99,7 @@ let questions = [
   },
   {
     id: 9,
-    question: "Main circuit board in a computer is:",
+    question: "The main circuit board in a computer is:",
     answer: "Mother board",
     options: [
       "Harddisk",
@@ -233,223 +233,223 @@ let questions = [
   //Physics questions 21 to 30
   {
     id: 21,
-    question: "What is the capital of Finland?",
-    answer:"Random Access Memory",
+    question: "Electrons carry a :",
+    answer:"Negative charge",
     options: [
-        "Run Accept Memory",
-        "Random All Memory",
-        "Random Access Memory",
+        "Positive charge",
+        "Negative charge",
+        "Neutral charge",
         "None of these"
     ]   
   },
   {
     id: 22,
-    question: "What is the Full-Form of CPU?",
-    answer: "Central Processing Unit",
+    question: "Light-year is a unit of:",
+    answer: "Length",
     options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
+      "Length",
+      "Speed",
+      "Magnetic field",
       "None of these"
     ]
   },
   {
     id: 23,
-    question: "What is the Full-Form of E-mail",
-    answer: "Electronic Mail",
+    question: "Light from Sun reaches Earth in approximately:",
+    answer: "8 minutes",
     options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
+      "8 minutes",
+      "6 minutes",
+      "24 seconds",
       "None of these"
     ]
   },
   {
     id: 24,
-    question: "'DB' in computer means?",
-    answer: "DataBase",
+    question: "The velocity of the sound is highest in:",
+    answer: "Metal",
     options: [
-      "Double Byte",
-      "Data Block",
-      "DataBase",
-      "None of these"
+      "Metal",
+      "Air",
+      "Water",
+      "Vacuum"
     ]
   },
   {
     id: 25,
-    question: "What is FMD?",
-    answer: "Fluorescent Multi-Layer Disc",
+    question: "Which type of radiation has the longest wave length?",
+    answer: "Radio wave",
     options: [
-      "Fluorescent Multi-Layer Disc",
-      "Flash Media Driver",
-      "Fast-Ethernet Measuring Device",
-      "None of these"
+      "X-ray",
+      "Radio wave",
+      "Infrared",
+      "Ultraviolet"
     ]
   },
   {
     id: 26,
-    question: "How many bits is a byte?",
-    answer: "8",
+    question: "Which physicist is the author of the book 'A Brief History of Time'?",
+    answer: "Stephen Hawking",
     options: [
-      "32",
-      "16",
-      "8",
-      "64"
+      "Albert Einstein",
+      "Isaac Newton",
+      "Max Planck",
+      "Stephen Hawking"
     ]
   },
   {
     id: 27,
-    question: "A JPG stands for:",
-    answer: "A format for an image file",
+    question: "Who is know as the 'father of quantum theory'?",
+    answer: "Max Planck",
     options: [
-      "A format for an image file",
-      "A Jumper Programmed Graphic",
-      "A type of hard disk",
-      "A unit of measure for memory"
+      "Albert Einstein",
+      "Isaac Newton",
+      "Max Planck",
+      "Stephen Hawking"
     ]
   },
   {
     id: 28,
-    question: "Which was an early mainframe computer?",
-    answer: "ENIAC",
+    question: "An atom with more neutrons than protons is called:",
+    answer: "Isotope",
     options: [
-      "ENIAC",
-      "EDVAC",
-      "UNIC",
-      "ABACUS"
-    ]
-  },
-  {
-    id: 29,
-    question: "Main circuit board in a computer is:",
-    answer: "Mother board",
-    options: [
-      "Harddisk",
-      "Mother board",
-      "Microprocessor",
+      "Ion",
+      "Isotope",
+      "Neutrino",
       "None of these"
     ]
   },
   {
-    id: 30,
-    question: "ISP stands for:",
-    answer: "Internet Service Provider",
+    id: 29,
+    question: "What is the average diameter of a neutron star?",
+    answer: "12 miles",
     options: [
-      "Internet Survey Period",
-      "Integreted Service Provider",
-      "Internet Security Protocol",
-      "Internet Service Provider"
+      "100 million miles",
+      "100 billion miles",
+      "10,000 miles",
+      "12 miles"
+    ]
+  },
+  {
+    id: 30,
+    question: "What is inside a black hole?",
+    answer: "Unknown",
+    options: [
+      "Anti-matter",
+      "Dark matter",
+      "Anti-gravity field",
+      "Unknown"
     ]
   },
   //Entertainment questions 31 to 40
   {
     id: 31,
-    question: "What is the capital of Finland?",
-    answer:"Random Access Memory",
+    question: "What was Disney's first film?",
+    answer:"Snow White",
     options: [
-        "Run Accept Memory",
-        "Random All Memory",
-        "Random Access Memory",
-        "None of these"
+        "Little Mermaid",
+        "Dumbo",
+        "Mickey Mouse",
+        "Snow White"
     ]   
   },
   {
     id: 32,
-    question: "What is the Full-Form of CPU?",
-    answer: "Central Processing Unit",
+    question: "What city do The Beatles come from?",
+    answer: "Liverpool",
     options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
-      "None of these"
+      "London",
+      "Liverpool",
+      "New York",
+      "Manchester"
     ]
   },
   {
     id: 33,
-    question: "What is the Full-Form of E-mail",
-    answer: "Electronic Mail",
+    question: "Which Bob Dylan song did Adele include on her first album?",
+    answer: "Make You Feel My Love",
     options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
+      "Make You Feel My Love",
+      "Like a Rolling Stone",
+      "Visions of Johanna",
+      "Idiot Wind"
     ]
   },
   {
     id: 34,
-    question: "'DB' in computer means?",
-    answer: "DataBase",
+    question: "Who played Han Solo in 'Star Wars'?",
+    answer: "Harrison Ford",
     options: [
-      "Double Byte",
-      "Data Block",
-      "DataBase",
-      "None of these"
+      "Ewan McGregor",
+      "Kevin Costner",
+      "Kevin Bacon",
+      "Harrison Ford"
     ]
   },
   {
     id: 35,
-    question: "What is FMD?",
-    answer: "Fluorescent Multi-Layer Disc",
+    question: "In which decade did Sylvester Stallone first play Rambo?",
+    answer: "80s",
     options: [
-      "Fluorescent Multi-Layer Disc",
-      "Flash Media Driver",
-      "Fast-Ethernet Measuring Device",
-      "None of these"
+      "90s",
+      "80s",
+      "70s",
+      "00s"
     ]
   },
   {
     id: 36,
-    question: "How many bits is a byte?",
-    answer: "8",
+    question: "What's the name of the puppy in the children's animated TV series 'Pocoyo'?",
+    answer: "Loula",
     options: [
-      "32",
-      "16",
-      "8",
-      "64"
+      "Pato",
+      "Loula",
+      "Fred",
+      "Elly"
     ]
   },
   {
     id: 37,
-    question: "A JPG stands for:",
-    answer: "A format for an image file",
+    question: "Who played the Saint in the 90s film?",
+    answer: "Val Kilmer",
     options: [
-      "A format for an image file",
-      "A Jumper Programmed Graphic",
-      "A type of hard disk",
-      "A unit of measure for memory"
+      "Val Kilmer",
+      "Sean Connery",
+      "Harrison Ford",
+      "Pierce Brosnan"
     ]
   },
   {
     id: 38,
-    question: "Which was an early mainframe computer?",
-    answer: "ENIAC",
+    question: "Who was the director of the film '2001: A Space Odyssey'?",
+    answer: "Stanley Kubrick",
     options: [
-      "ENIAC",
-      "EDVAC",
-      "UNIC",
-      "ABACUS"
+      "Steven Spielberg",
+      "James Cameron",
+      "Stanley Kubrick",
+      "Martin Scorsese"
     ]
   },
   {
     id: 39,
-    question: "Main circuit board in a computer is:",
-    answer: "Mother board",
+    question: "Who is the author of the book 'Anna Karenina'?",
+    answer: "Leo Tolstoy",
     options: [
-      "Harddisk",
-      "Mother board",
-      "Microprocessor",
-      "None of these"
+      "Franz Kafka",
+      "Leo Tolstoy",
+      "Stephen King",
+      "Fyodor Dostoyevsky"
     ]
   },
   {
     id: 40,
-    question: "ISP stands for:",
-    answer: "Internet Service Provider",
+    question: "What is the name of the manufacturer that provides the gadgets that Coyote uses to catch the Road Runner?",
+    answer: "ACME",
     options: [
-      "Internet Survey Period",
-      "Integreted Service Provider",
-      "Internet Security Protocol",
-      "Internet Service Provider"
+      "Amazon",
+      "Intel",
+      "ACME",
+      "SpaceX"
     ]
   },
 ];
@@ -461,7 +461,7 @@ let add_count = 0;
 let points = 0;
 let questionPoints = 0;
 const setTime = 15;
-let time = setTime -1;
+let time = setTime - 1;
 let interval;
 
 checkCategory();
@@ -483,7 +483,7 @@ window.onload = function(){
 
 function show(){
     let question = document.getElementById("questions");
-    let[first, second, third, fourth] = questions[question_count].options;
+    let[first, second, third, fourth] = questions[question_count + add_count].options;
 
     question.innerHTML = `<h2>Q${question_count + 1}. ${questions[question_count + add_count].question}</h2>
     <div class="quiz-buttons">
@@ -534,12 +534,16 @@ function next(){
 
   /*let user_answer = document.querySelector("button.block-button.active").innerHTML;*/
 
-  if(user_answer === questions[question_count].answer){
+  if(user_answer === questions[question_count + add_count].answer){
     questionPoints = 10;
     points += 10;
 
   } else {
     questionPoints = 0;
+    if (user_answer === ""){
+      /*user has selected no answer and hit the next button*/
+      user_answer = "No answer";
+    }
     console.log("Question points:", questionPoints);
   }
 
@@ -559,6 +563,7 @@ function startCount() {
     document.getElementById("progressBar").value = setTime - time; 
     time -= 1;
   } else {
+    /*user has run out of time without hitting the next button*/
     user_answer = "No answer";
     questionPoints = 0;
     time = setTime;    
@@ -584,7 +589,7 @@ function stopCount(user_answer) {
 }
 
 function createResultsList(user_answer) {
-  let questionList = new Array(questions[question_count].question, user_answer, questions[question_count].answer, time, questionPoints);
+  let questionList = new Array(questions[question_count + add_count].question, user_answer, questions[question_count + add_count].answer, time, questionPoints);
   resultsList.push(questionList);
   sessionStorage.setItem("resultsList",JSON.stringify(resultsList));
   questionPoints = 0;
