@@ -81,7 +81,8 @@ function createLeaderboard(user_name, topic, user_points){
             } else {
                 // The player has not played this quizz topic before.
                 // Points scored in this topic are added to total_points, and updated in the leaderboard stored in localStorage.
-                const addPoints = (parseInt(leaderboard[position].total_points)) + (parseInt(user_points));
+                let addPoints = (parseInt(leaderboard[position].total_points)) + (parseInt(user_points));
+                //if (isNaN(addPoints)) addPoints = 0;
 
                 leaderboard[position].total_points = addPoints;
                 leaderboard[position].categories.push(topic);

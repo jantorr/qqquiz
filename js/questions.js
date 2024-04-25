@@ -123,111 +123,111 @@ let questions = [
   {
     id: 11,
     question: "What is the capital of Finland?",
-    answer:"Random Access Memory",
+    answer:"Helsinki",
     options: [
-        "Run Accept Memory",
-        "Random All Memory",
-        "Random Access Memory",
-        "None of these"
+        "Oslo",
+        "Stockholm",
+        "Riga",
+        "Helsinki"
     ]   
   },
   {
     id: 12,
-    question: "What is the Full-Form of CPU?",
-    answer: "Central Processing Unit",
+    question: "Which animal appears on the flag of Sri Lanka?",
+    answer: "Lion",
     options: [
-      "Central Program Unit",
-      "Central Processing Unit",
-      "Central Preload Unit",
-      "None of these"
+      "Lion",
+      "Eagle",
+      "Bear",
+      "Mosquito"
     ]
   },
   {
     id: 13,
-    question: "What is the Full-Form of E-mail",
-    answer: "Electronic Mail",
+    question: "In which UK city would you find the river Clyde?",
+    answer: "Glasgow",
     options: [
-      "Electronic Mail",
-      "Electric Mail",
-      "Engine Mail",
-      "None of these"
+      "London",
+      "Glasgow",
+      "Liverpool",
+      "Bristol"
     ]
   },
   {
     id: 14,
-    question: "'DB' in computer means?",
-    answer: "DataBase",
+    question: "What is the capital of Peru?",
+    answer: "Lima",
     options: [
-      "Double Byte",
-      "Data Block",
-      "DataBase",
-      "None of these"
+      "Cuzco",
+      "Bogotá",
+      "La Paz",
+      "Lima"
     ]
   },
   {
     id: 15,
-    question: "What is FMD?",
-    answer: "Fluorescent Multi-Layer Disc",
+    question: "What is the name of the microstate located between Spain and France?",
+    answer: "Andorra",
     options: [
-      "Fluorescent Multi-Layer Disc",
-      "Flash Media Driver",
-      "Fast-Ethernet Measuring Device",
-      "None of these"
+      "Aragón",
+      "Monaco",
+      "Andorra",
+      "Biarritz"
     ]
   },
   {
     id: 16,
-    question: "How many bits is a byte?",
-    answer: "8",
+    question: "What is the highest peak in Africa?",
+    answer: "Mount Kilimanjaro",
     options: [
-      "32",
-      "16",
-      "8",
-      "64"
+      "Aconcagua",
+      "Mount Kilimanjaro",
+      "Mount Kenya",
+      "Mount Toubkal"
     ]
   },
   {
     id: 17,
-    question: "A JPG stands for:",
-    answer: "A format for an image file",
+    question: "What is the longest river in the UK?",
+    answer: "River Severn",
     options: [
-      "A format for an image file",
-      "A Jumper Programmed Graphic",
-      "A type of hard disk",
-      "A unit of measure for memory"
+      "River Clyde",
+      "River Thames",
+      "River Severn",
+      "River Tay"
     ]
   },
   {
     id: 18,
-    question: "Which was an early mainframe computer?",
-    answer: "ENIAC",
+    question: "What is the capital of Canada?",
+    answer: "Ottawa",
     options: [
-      "ENIAC",
-      "EDVAC",
-      "UNIC",
-      "ABACUS"
+      "Ottawa",
+      "Toronto",
+      "Montreal",
+      "Vancouver"
     ]
   },
   {
     id: 19,
-    question: "Main circuit board in a computer is:",
-    answer: "Mother board",
+    question: "What is the name of the smallest country in the world?",
+    answer: "The Vatican City",
     options: [
-      "Harddisk",
-      "Mother board",
-      "Microprocessor",
-      "None of these"
+      "Luxembourg",
+      "The Vatican City",
+      "Monaco",
+      "Nauru"
     ]
   },
   {
     id: 20,
-    question: "ISP stands for:",
-    answer: "Internet Service Provider",
+    question: "How many stars are on the Australian flag?",
+    answer: "6",
     options: [
-      "Internet Survey Period",
-      "Integreted Service Provider",
-      "Internet Security Protocol",
-      "Internet Service Provider"
+      "3",
+      "5",
+      "4",
+      "6"
     ]
   },
   //Physics questions 21 to 30
@@ -534,15 +534,16 @@ function next(){
 
   /*let user_answer = document.querySelector("button.block-button.active").innerHTML;*/
 
-  if(user_answer == questions[question_count].answer){
+  if(user_answer === questions[question_count].answer){
     questionPoints = 10;
     points += 10;
-    sessionStorage.setItem("points",points);
+
   } else {
     questionPoints = 0;
+    console.log("Question points:", questionPoints);
   }
 
-  console.log(points);
+  console.log("Points:", points);
   stopCount(user_answer);
 }
 
@@ -571,6 +572,7 @@ function stopCount(user_answer) {
   interval = null;
   createResultsList(user_answer);
   if(question_count == 9){
+    sessionStorage.setItem("points", points);
     window.location = "./results.html";
   } else {
     document.getElementById("countdown").innerText = setTime;
@@ -585,4 +587,5 @@ function createResultsList(user_answer) {
   let questionList = new Array(questions[question_count].question, user_answer, questions[question_count].answer, time, questionPoints);
   resultsList.push(questionList);
   sessionStorage.setItem("resultsList",JSON.stringify(resultsList));
+  questionPoints = 0;
 }
