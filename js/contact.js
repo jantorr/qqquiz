@@ -1,3 +1,6 @@
+// JavaScript for contact.html
+
+// display the leaderboard on the right-side section
 function displayLeaderboard(){
     if (localStorage.getItem("leaderboard") != null){
       let leaderboard = JSON.parse(localStorage.getItem("leaderboard"));

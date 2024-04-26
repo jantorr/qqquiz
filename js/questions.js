@@ -493,7 +493,6 @@ function show(){
       <button class="block-button">${fourth}</button>
     </div>`;
 
-    //toggleActive();
     getAnswer();
     countdown();
 }
@@ -512,27 +511,9 @@ function getAnswer(){
   });
 }
 
-/*function toggleActive(){
-  let option = document.querySelectorAll("button.block-button");
-  for(let i=0; i < option.length; i++){
-      option[i].onclick = function(){
-          for(let i=0; i < option.length; i++){
-              if(option[i].classList.contains("active")){
-                  option[i].classList.remove("active");
-              }
-          }
-          option[i].classList.add("active");
-      }
-  }
-}*/
-
-
-
 function next(){
  
   console.log(question_count);
-
-  /*let user_answer = document.querySelector("button.block-button.active").innerHTML;*/
 
   if(user_answer === questions[question_count + add_count].answer){
     questionPoints = 10;
@@ -589,7 +570,7 @@ function stopCount(user_answer) {
 }
 
 function createResultsList(user_answer) {
-  let questionList = new Array(questions[question_count + add_count].question, user_answer, questions[question_count + add_count].answer, time, questionPoints);
+  let questionList = new Array(questions[question_count + add_count].question, user_answer, questions[question_count + add_count].answer, setTime - time, questionPoints);
   resultsList.push(questionList);
   sessionStorage.setItem("resultsList",JSON.stringify(resultsList));
   questionPoints = 0;
