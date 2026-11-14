@@ -1,0 +1,3 @@
+BUGS (14/11/20226)
+- Answer button is not highlighted when clicking on.
+- If no answer is selected and press <Next>, the answer of the previous question is carried to the next question. It should be initialised.
